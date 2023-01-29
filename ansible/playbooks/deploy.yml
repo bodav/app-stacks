@@ -1,0 +1,8 @@
+- hosts: all
+  become: false
+  tasks:
+    - name: Git update homepi repo
+      ansible.builtin.git:
+        repo: "https://github.com/bodav/homepi.git"
+        dest: ~/git/homepi
+        force: true
