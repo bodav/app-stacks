@@ -1,8 +1,14 @@
 - hosts: all
-  become: false
+  become: true
   tasks:
-    - name: Git update homepi repo
+    - name: git update homepi repo
       ansible.builtin.git:
         repo: "https://github.com/bodav/homepi.git"
-        dest: ~/git/homepi
+        dest: /srv/homepi
         force: true
+
+    - name: Docker compose down
+      shell: "docker compose -f /srv/homepi/docker-compose.yml down"
+
+    - name: Docker compose up
+      shell: "docker compose -f /srv/homepi/docker-compose.yml up -d"
