@@ -1,4 +1,12 @@
 services:
+  nginx:
+    container_name: nginx
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+
   dozzle:
     container_name: dozzle
     image: amir20/dozzle:latest
