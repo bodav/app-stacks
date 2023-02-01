@@ -32,18 +32,17 @@ services:
       options:
         max-size: "10mb"
         max-file: "1"
-
-  jellyfin:
-    image: jellyfin/jellyfin:latest
-    container_name: jellyfin
-    network_mode: host
-    volumes:
-      - ./jellyfin/config:/config
-      - ./jellyfin/cache:/cache
-      - /media:/media
-    restart: unless-stopped
-    logging:
-      driver: json-file
-      options:
-        max-size: "10mb"
-        max-file: "1"
+  # jellyfin:
+  #   image: jellyfin/jellyfin:latest
+  #   container_name: jellyfin
+  #   network_mode: host
+  #   volumes:
+  #     - ./jellyfin/config:/config
+  #     - ./jellyfin/cache:/cache
+  #     - /media:/media
+  #   restart: unless-stopped
+  #   logging:
+  #     driver: json-file
+  #     options:
+  #       max-size: "10mb"
+  #       max-file: "1"
