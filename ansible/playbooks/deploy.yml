@@ -10,7 +10,7 @@
         force: true
 
     - name: Docker compose down
-      ansible.builtin.shell: "docker compose -f /srv/homepi/docker-compose.yml --remove-orphans down"
+      ansible.builtin.shell: "docker compose -f /srv/homepi/docker-compose.yml down --remove-orphans"
 
     - name: Docker compose up
       ansible.builtin.shell: "docker compose -f /srv/homepi/docker-compose.yml up -d"
