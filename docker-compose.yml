@@ -42,3 +42,8 @@ services:
       - ./jellyfin/cache:/cache
       - /media:/media
     restart: unless-stopped
+    logging:
+      driver: json-file
+      options:
+        max-size: "10mb"
+        max-file: "1"
