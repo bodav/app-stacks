@@ -31,6 +31,8 @@ services:
     image: oznu/homebridge:latest
     restart: unless-stopped
     network_mode: host
+    expose:
+      - 8581
     volumes:
       - ./homebridge:/homebridge
     environment:

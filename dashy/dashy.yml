@@ -16,7 +16,7 @@ sections: # An array of sections
   items:
   - title: Firewall
     icon: favicon
-    url: http://192.168.1.1/
+    url: /homebridge
   - title: Game Server
     icon: https://i.ibb.co/710B3Yc/space-invader-x256.png
-    url: http://192.168.130.1/
+    url: /dozzle
