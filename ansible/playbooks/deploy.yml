@@ -8,7 +8,7 @@
         repo: "https://github.com/bodav/homepi.git"
         dest: /srv/homepi
         force: true
-
+    # if changed
     - name: Docker compose down
       ansible.builtin.shell: "docker compose -f /srv/homepi/docker-compose.yml down --remove-orphans"
 

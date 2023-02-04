@@ -16,16 +16,14 @@ services:
       - 8080:8080
     restart: unless-stopped
 
-  homarr:
-    container_name: homarr
-    image: ghcr.io/ajnart/homarr:latest
-    restart: unless-stopped
+  dashy:
+    image: lissy93/dashy:latest
+    container_name: Dashy
     volumes:
-      - ./homarr/configs:/app/data/configs
-      - ./homarr/icons:/app/public/icons
-      - /var/run/docker.sock:/var/run/docker.sock
+      - ./dashy/dashy.yml:/app/public/conf.yml
     ports:
-      - 7575:7575
+      - 4000:80
+    restart: unless-stopped
 
   homebridge:
     container_name: homebridge
