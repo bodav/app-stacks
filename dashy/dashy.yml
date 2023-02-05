@@ -1,11 +1,22 @@
+appConfig:
+  layout: auto
+  iconSize: large
+  theme: nord-frost
+  lang: en
 pageInfo:
   title: homepi.local
-sections: # An array of sections
+sections:
 - name: Services
   items:
+  - title: Jellyfin
+    icon: hl-jellyfin
+    url: /jellyfin
+    target: newtab
   - title: Homebridge
-    icon: favicon
+    icon: hl-homebridge
     url: /homebridge
+    target: newtab
   - title: Dozzle
-    icon: https://i.ibb.co/710B3Yc/space-invader-x256.png
+    icon: hl-dozzle
     url: /dozzle
+    target: newtab
