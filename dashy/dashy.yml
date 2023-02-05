@@ -1,10 +1,11 @@
 appConfig:
   layout: auto
-  iconSize: large
+  iconSize: medium
   theme: nord-frost
-  lang: en
+
 pageInfo:
   title: homepi.local
+
 sections:
 - name: Services
   items:
@@ -19,4 +20,15 @@ sections:
   - title: Dozzle
     icon: hl-dozzle
     url: /dozzle
+    target: newtab
+
+- name: Network
+  items:
+  - title: Router
+    icon: hl-router
+    url: http://192.168.0.1
+    target: newtab
+  - title: Linksys Velop
+    icon: hl-linksys
+    url: http://192.168.1.1
     target: newtab
