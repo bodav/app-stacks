@@ -11,7 +11,7 @@ services:
 
   yacht:
     container_name: yacht
-    image: selfhostedpro/yacht
+    image: selfhostedpro/yacht:latest
     restart: unless-stopped
     ports:
       - 8000:8000
