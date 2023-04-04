@@ -1,6 +1,0 @@
-[pi]
-homepi.local
-#devpi.local
-
-[pi:vars]
-ansible_ssh_user=pi

@@ -12,14 +12,16 @@ upstream:
 #       - ads
 fqdnOnly: true
 customDNS:
-  customTTL: 1h
+  customTTL: 6h
   filterUnmappedTypes: true
   rewrite:
     lan: home
-    arpa: home
+    home.arpa: home
   mapping:
     srv.home: 192.168.1.2
     dev.home: 192.168.1.3
+prometheus:
+  enable: true
 queryLog:
   type: console
 log:

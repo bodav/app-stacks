@@ -1,22 +1,22 @@
----
 - name: Deploy docker compose
   hosts: all
   become: true
+  vars:
+    compose: "/srv/homepi/docker-compose.yml"
   tasks:
     - name: Git update homepi repo
       ansible.builtin.git:
-        repo: "https://github.com/bodav/homepi.git"
+        repo: "https://github.com/bodav/home-srv.git"
         dest: /srv/homepi
         force: true
-      register: repo
-    # if changed
-    - name: Docker compose down
-      ansible.builtin.shell: "docker compose -f /srv/homepi/docker-compose.yml down --remove-orphans"
-      when: repo.changed
+        version: HEAD # noqa: latest
+      notify: "bounce docker compose"
 
-    # - name: Docker compose pull
-    #   ansible.builtin.shell: "docker compose -f /srv/homepi/docker-compose.yml pull"
+  handlers:
+    - name: Docker compose down
+      ansible.builtin.command: "docker compose -f {{ compose }} down --remove-orphans"
+      listen: "bounce docker compose"
 
     - name: Docker compose up
-      ansible.builtin.shell: "docker compose -f /srv/homepi/docker-compose.yml up -d"
-      when: repo.changed
+      ansible.builtin.command: "docker compose -f {{ compose }} up -d"
+      listen: "bounce docker compose"

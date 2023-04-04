@@ -1,0 +1,12 @@
+all:
+  children:
+    srv:
+      hosts:
+        homepi.local:
+          ansible_ssh_user: pi
+
+    dev:
+      hosts:
+        devpi.local:
+          ansible_ssh_user: pi
+          
