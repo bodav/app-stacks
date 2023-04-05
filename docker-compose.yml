@@ -1,33 +1,12 @@
 services:
-  blocky:
-    image: spx01/blocky
-    container_name: blocky
-    restart: unless-stopped
-    ports:
-      - "53:53/tcp"
-      - "53:53/udp"
-      - "8083:4000/tcp"
+  filebrowser:
+    container_name: filebrowser
+    image: filebrowser/filebrowser
     volumes:
-      - ./blocky/config.yml:/app/config.yml
-
-  nginx:
-    container_name: nginx
-    image: nginx:latest
-    network_mode: host
-    restart: unless-stopped
+      - /:/srv
+      - ./../filebrowser/config.json:/.filebrowser.json
     ports:
-      - "80:80"
-    volumes:
-      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
-
-  dozzle:
-    container_name: dozzle
-    image: amir20/dozzle:latest
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-    ports:
-      - 8080:8080
-    restart: unless-stopped
+      - 8081:80
 
   dashy:
     image: lissy93/dashy:latest
