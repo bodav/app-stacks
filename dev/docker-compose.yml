@@ -7,3 +7,13 @@ services:
     ports:
       - 8080:8080
     restart: unless-stopped
+
+  filebrowser:
+    container_name: filebrowser
+    image: filebrowser/filebrowser
+    volumes:
+      - /:/srv
+      - ./../filebrowser/database.db:/database.db
+      - ./../filebrowser/config.json:/.filebrowser.json
+    ports:
+      - 8081:80
