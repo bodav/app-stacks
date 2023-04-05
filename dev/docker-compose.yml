@@ -13,7 +13,7 @@ services:
     image: filebrowser/filebrowser
     volumes:
       - /:/srv
-      - ./../filebrowser/database.db:/database.db
+      #- ./../filebrowser/database.db:/database.db
       - ./../filebrowser/config.json:/.filebrowser.json
     ports:
       - 8081:80
