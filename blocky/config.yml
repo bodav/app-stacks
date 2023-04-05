@@ -10,7 +10,6 @@ upstream:
 #   clientGroupsBlock:
 #     default:
 #       - ads
-fqdnOnly: true
 customDNS:
   customTTL: 6h
   filterUnmappedTypes: true
