@@ -2,12 +2,12 @@
   hosts: all
   become: true
   vars:
-    compose: "/srv/homepi/docker-compose.yml"
+    compose: "/srv/home-apps/docker-compose.yml"
   tasks:
-    - name: Git update homepi repo
+    - name: Git update home-apps repo
       ansible.builtin.git:
-        repo: "https://github.com/bodav/home-srv.git"
-        dest: /srv/homepi
+        repo: "https://github.com/bodav/home-apps.git"
+        dest: /srv/home-apps
         force: true
         version: HEAD # noqa: latest
       notify: "bounce docker compose"
