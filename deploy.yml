@@ -17,6 +17,10 @@
       ansible.builtin.command: "docker compose -f {{ compose }} down --remove-orphans"
       listen: "bounce docker compose"
 
+    # - name: Docker compose pull
+    #   ansible.builtin.command: "docker compose -f {{ compose }} pull"
+    #   listen: "bounce docker compose"
+
     - name: Docker compose up
       ansible.builtin.command: "docker compose -f {{ compose }} up -d"
       listen: "bounce docker compose"
