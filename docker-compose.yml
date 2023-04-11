@@ -1,4 +1,13 @@
 services:
+  filebrowser:
+    container_name: filebrowser
+    image: filebrowser/filebrowser
+    volumes:
+      - /:/srv
+      - ./filebrowser/config.json:/.filebrowser.json
+    ports:
+      - 8081:80
+
   homebridge:
     container_name: homebridge
     image: oznu/homebridge:latest
