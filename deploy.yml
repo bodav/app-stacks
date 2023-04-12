@@ -13,13 +13,13 @@
       notify: "bounce docker compose"
 
   handlers:
+    - name: Docker compose pull
+      ansible.builtin.command: "docker compose -f {{ compose }} pull"
+      listen: "bounce docker compose"
+
     - name: Docker compose down
       ansible.builtin.command: "docker compose -f {{ compose }} down --remove-orphans"
       listen: "bounce docker compose"
-
-    # - name: Docker compose pull
-    #   ansible.builtin.command: "docker compose -f {{ compose }} pull"
-    #   listen: "bounce docker compose"
 
     - name: Docker compose up
       ansible.builtin.command: "docker compose -f {{ compose }} up -d"
