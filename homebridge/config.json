@@ -32,7 +32,6 @@
     {
       "name": "Config",
       "port": 8581,
-      "auth": "none",
       "theme": "auto",
       "tempUnits": "c",
       "lang": "auto",
