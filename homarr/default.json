@@ -117,6 +117,82 @@
       }
     },
     {
+      "id": "929261c1-621d-4920-bdb4-dc67407c889e",
+      "name": "dozzle",
+      "url": "http://log.dev.home",
+      "appearance": {
+        "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/dozzle.png"
+      },
+      "network": {
+        "enabledStatusChecker": true,
+        "okStatus": [200]
+      },
+      "behaviour": {
+        "isOpeningNewTab": true,
+        "externalUrl": "http://log.dev.home"
+      },
+      "area": {
+        "type": "category",
+        "properties": {
+          "id": "95c2c89b-9856-4fb7-aca4-d6c9e7b2ffe6"
+        }
+      },
+      "shape": {
+        "lg": {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "size": {
+            "width": 2,
+            "height": 1
+          }
+        }
+      },
+      "integration": {
+        "type": null,
+        "properties": []
+      }
+    },
+    {
+      "id": "58d3e9e5-250c-4399-9f01-66f30c1a285f",
+      "name": "Router",
+      "url": "http://192.168.0.1",
+      "appearance": {
+        "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/router.png"
+      },
+      "network": {
+        "enabledStatusChecker": true,
+        "okStatus": [200]
+      },
+      "behaviour": {
+        "isOpeningNewTab": true,
+        "externalUrl": "http://192.168.0.1"
+      },
+      "area": {
+        "type": "category",
+        "properties": {
+          "id": "74426e56-49b0-45eb-8158-023d508fe5ce"
+        }
+      },
+      "shape": {
+        "lg": {
+          "location": {
+            "x": 2,
+            "y": 0
+          },
+          "size": {
+            "width": 2,
+            "height": 1
+          }
+        }
+      },
+      "integration": {
+        "type": null,
+        "properties": []
+      }
+    },
+    {
       "id": "68e235d4-4878-43d4-b9f0-53a384d9907a",
       "name": "filebrowser",
       "url": "http://fs.dev.home",
@@ -193,11 +269,11 @@
       }
     },
     {
-      "id": "5d22aad9-15ce-41e3-9eb9-b2e437a96d16",
-      "name": "Blocky",
-      "url": "http://blocky.app.home",
+      "id": "58891032-1c65-4b76-89cb-9b66e63344b1",
+      "name": "Jellyfin",
+      "url": "http://jellyfin.app.home",
       "appearance": {
-        "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/blocky.png"
+        "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/jellyfin.png"
       },
       "network": {
         "enabledStatusChecker": true,
@@ -205,7 +281,45 @@
       },
       "behaviour": {
         "isOpeningNewTab": true,
-        "externalUrl": "http://blocky.app.home"
+        "externalUrl": "http://jellyfin.app.home"
+      },
+      "area": {
+        "type": "category",
+        "properties": {
+          "id": "47af36c0-47c1-4e5b-bfc7-ad645ee6a33f"
+        }
+      },
+      "shape": {
+        "lg": {
+          "location": {
+            "x": 8,
+            "y": 0
+          },
+          "size": {
+            "width": 2,
+            "height": 1
+          }
+        }
+      },
+      "integration": {
+        "type": null,
+        "properties": []
+      }
+    },
+    {
+      "id": "ce631aa0-6e58-4f21-8c3f-f3fba7fe9332",
+      "name": "Homebridge",
+      "url": "http://homebridge.app.home",
+      "appearance": {
+        "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/homebridge.png"
+      },
+      "network": {
+        "enabledStatusChecker": true,
+        "okStatus": [200]
+      },
+      "behaviour": {
+        "isOpeningNewTab": true,
+        "externalUrl": "http://homebridge.app.home"
       },
       "area": {
         "type": "category",
@@ -231,11 +345,11 @@
       }
     },
     {
-      "id": "58891032-1c65-4b76-89cb-9b66e63344b1",
-      "name": "Jellyfin",
-      "url": "http://jellyfin.app.home",
+      "id": "5d22aad9-15ce-41e3-9eb9-b2e437a96d16",
+      "name": "Blocky",
+      "url": "http://blocky.app.home",
       "appearance": {
-        "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/jellyfin.png"
+        "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/blocky.png"
       },
       "network": {
         "enabledStatusChecker": true,
@@ -243,7 +357,7 @@
       },
       "behaviour": {
         "isOpeningNewTab": true,
-        "externalUrl": "http://jellyfin.app.home"
+        "externalUrl": "http://blocky.app.home"
       },
       "area": {
         "type": "category",
@@ -255,82 +369,6 @@
         "lg": {
           "location": {
             "x": 6,
-            "y": 0
-          },
-          "size": {
-            "width": 2,
-            "height": 1
-          }
-        }
-      },
-      "integration": {
-        "type": null,
-        "properties": []
-      }
-    },
-    {
-      "id": "929261c1-621d-4920-bdb4-dc67407c889e",
-      "name": "dozzle",
-      "url": "http://log.dev.home",
-      "appearance": {
-        "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/dozzle.png"
-      },
-      "network": {
-        "enabledStatusChecker": true,
-        "okStatus": [200]
-      },
-      "behaviour": {
-        "isOpeningNewTab": true,
-        "externalUrl": "http://log.dev.home"
-      },
-      "area": {
-        "type": "category",
-        "properties": {
-          "id": "95c2c89b-9856-4fb7-aca4-d6c9e7b2ffe6"
-        }
-      },
-      "shape": {
-        "lg": {
-          "location": {
-            "x": 0,
-            "y": 0
-          },
-          "size": {
-            "width": 2,
-            "height": 1
-          }
-        }
-      },
-      "integration": {
-        "type": null,
-        "properties": []
-      }
-    },
-    {
-      "id": "58d3e9e5-250c-4399-9f01-66f30c1a285f",
-      "name": "Router",
-      "url": "http://192.168.0.1",
-      "appearance": {
-        "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/router.png"
-      },
-      "network": {
-        "enabledStatusChecker": true,
-        "okStatus": [200]
-      },
-      "behaviour": {
-        "isOpeningNewTab": true,
-        "externalUrl": "http://192.168.0.1"
-      },
-      "area": {
-        "type": "category",
-        "properties": {
-          "id": "74426e56-49b0-45eb-8158-023d508fe5ce"
-        }
-      },
-      "shape": {
-        "lg": {
-          "location": {
-            "x": 2,
             "y": 0
           },
           "size": {
