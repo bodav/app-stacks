@@ -41,6 +41,44 @@
   ],
   "apps": [
     {
+      "id": "304d3b37-f04f-4733-a230-da0a748292d2",
+      "name": "Filebrowser",
+      "url": "http://fs.app.home",
+      "appearance": {
+        "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/filebrowser.png"
+      },
+      "network": {
+        "enabledStatusChecker": true,
+        "okStatus": [200]
+      },
+      "behaviour": {
+        "isOpeningNewTab": true,
+        "externalUrl": "http://fs.app.home"
+      },
+      "area": {
+        "type": "category",
+        "properties": {
+          "id": "47af36c0-47c1-4e5b-bfc7-ad645ee6a33f"
+        }
+      },
+      "shape": {
+        "lg": {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "size": {
+            "width": 2,
+            "height": 1
+          }
+        }
+      },
+      "integration": {
+        "type": null,
+        "properties": []
+      }
+    },
+    {
       "id": "58fde86b-c837-4ad6-b69e-a87afeb5aee1",
       "name": "dozzle",
       "url": "http://log.app.home",
@@ -79,9 +117,85 @@
       }
     },
     {
+      "id": "68e235d4-4878-43d4-b9f0-53a384d9907a",
+      "name": "filebrowser",
+      "url": "http://fs.dev.home",
+      "appearance": {
+        "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/filebrowser.png"
+      },
+      "network": {
+        "enabledStatusChecker": true,
+        "okStatus": [200]
+      },
+      "behaviour": {
+        "isOpeningNewTab": true,
+        "externalUrl": "http://fs.dev.home"
+      },
+      "area": {
+        "type": "category",
+        "properties": {
+          "id": "95c2c89b-9856-4fb7-aca4-d6c9e7b2ffe6"
+        }
+      },
+      "shape": {
+        "lg": {
+          "location": {
+            "x": 2,
+            "y": 0
+          },
+          "size": {
+            "width": 2,
+            "height": 1
+          }
+        }
+      },
+      "integration": {
+        "type": null,
+        "properties": []
+      }
+    },
+    {
+      "id": "a7f8816e-1df7-4609-abb0-a7f85a002559",
+      "name": "Linksys Velop",
+      "url": "http://velop.home",
+      "appearance": {
+        "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/d-link-wifi.png"
+      },
+      "network": {
+        "enabledStatusChecker": true,
+        "okStatus": [200]
+      },
+      "behaviour": {
+        "isOpeningNewTab": true,
+        "externalUrl": "http://velop.home"
+      },
+      "area": {
+        "type": "category",
+        "properties": {
+          "id": "74426e56-49b0-45eb-8158-023d508fe5ce"
+        }
+      },
+      "shape": {
+        "lg": {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "size": {
+            "width": 2,
+            "height": 1
+          }
+        }
+      },
+      "integration": {
+        "type": null,
+        "properties": []
+      }
+    },
+    {
       "id": "5d22aad9-15ce-41e3-9eb9-b2e437a96d16",
       "name": "Blocky",
-      "url": "http://app.home:4000",
+      "url": "http://blocky.app.home",
       "appearance": {
         "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/blocky.png"
       },
@@ -91,7 +205,7 @@
       },
       "behaviour": {
         "isOpeningNewTab": true,
-        "externalUrl": "http://app.home:4000"
+        "externalUrl": "http://blocky.app.home"
       },
       "area": {
         "type": "category",
@@ -155,82 +269,6 @@
       }
     },
     {
-      "id": "68e235d4-4878-43d4-b9f0-53a384d9907a",
-      "name": "filebrowser",
-      "url": "http://fs.dev.home",
-      "appearance": {
-        "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/filebrowser.png"
-      },
-      "network": {
-        "enabledStatusChecker": true,
-        "okStatus": [200]
-      },
-      "behaviour": {
-        "isOpeningNewTab": true,
-        "externalUrl": "http://fs.dev.home"
-      },
-      "area": {
-        "type": "category",
-        "properties": {
-          "id": "95c2c89b-9856-4fb7-aca4-d6c9e7b2ffe6"
-        }
-      },
-      "shape": {
-        "lg": {
-          "location": {
-            "x": 2,
-            "y": 0
-          },
-          "size": {
-            "width": 2,
-            "height": 1
-          }
-        }
-      },
-      "integration": {
-        "type": null,
-        "properties": []
-      }
-    },
-    {
-      "id": "304d3b37-f04f-4733-a230-da0a748292d2",
-      "name": "Filebrowser",
-      "url": "http://fs.app.home",
-      "appearance": {
-        "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/filebrowser.png"
-      },
-      "network": {
-        "enabledStatusChecker": true,
-        "okStatus": [200]
-      },
-      "behaviour": {
-        "isOpeningNewTab": true,
-        "externalUrl": "http://fs.app.home"
-      },
-      "area": {
-        "type": "category",
-        "properties": {
-          "id": "47af36c0-47c1-4e5b-bfc7-ad645ee6a33f"
-        }
-      },
-      "shape": {
-        "lg": {
-          "location": {
-            "x": 0,
-            "y": 0
-          },
-          "size": {
-            "width": 2,
-            "height": 1
-          }
-        }
-      },
-      "integration": {
-        "type": null,
-        "properties": []
-      }
-    },
-    {
       "id": "929261c1-621d-4920-bdb4-dc67407c889e",
       "name": "dozzle",
       "url": "http://log.dev.home",
@@ -249,44 +287,6 @@
         "type": "category",
         "properties": {
           "id": "95c2c89b-9856-4fb7-aca4-d6c9e7b2ffe6"
-        }
-      },
-      "shape": {
-        "lg": {
-          "location": {
-            "x": 0,
-            "y": 0
-          },
-          "size": {
-            "width": 2,
-            "height": 1
-          }
-        }
-      },
-      "integration": {
-        "type": null,
-        "properties": []
-      }
-    },
-    {
-      "id": "a7f8816e-1df7-4609-abb0-a7f85a002559",
-      "name": "Linksys Velop",
-      "url": "http://velop.home",
-      "appearance": {
-        "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/d-link-wifi.png"
-      },
-      "network": {
-        "enabledStatusChecker": true,
-        "okStatus": [200]
-      },
-      "behaviour": {
-        "isOpeningNewTab": true,
-        "externalUrl": "http://velop.home"
-      },
-      "area": {
-        "type": "category",
-        "properties": {
-          "id": "74426e56-49b0-45eb-8158-023d508fe5ce"
         }
       },
       "shape": {
