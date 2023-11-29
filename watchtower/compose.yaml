@@ -1,0 +1,10 @@
+services:
+  watchtower:
+    image: containrrr/watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: --debug --http-api-update
+    labels:
+      - com.centurylinklabs.watchtower.enable=false
+    ports:
+      - 8086:8080
