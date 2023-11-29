@@ -1,6 +1,6 @@
 services:
   flame:
-    image: pawelmalak/flame
+    image: pawelmalak/flame:multiarch
     container_name: flame
     volumes:
       - ./data:/app/data
