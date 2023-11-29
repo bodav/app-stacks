@@ -6,4 +6,8 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
       - 8080:8080
+    labels:
+      - flame.type=application # "app" works too
+      - flame.name=Dozzle
+      - flame.url=http://log.app.home
     restart: unless-stopped
