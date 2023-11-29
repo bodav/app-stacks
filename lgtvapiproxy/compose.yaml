@@ -1,0 +1,9 @@
+services:
+  lgtvapiproxy:
+    container_name: lgtvapiproxy
+    image: ghcr.io/bodav/lgtvapiproxy:main
+    restart: unless-stopped
+    environment:
+      - LGTVIP=192.168.1.207
+    ports:
+      - "3080:3000"
