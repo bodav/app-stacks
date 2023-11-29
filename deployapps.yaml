@@ -2,7 +2,7 @@
   hosts: all
   become: true
   vars:
-    compose: "/srv/home-apps/docker-compose.yml"
+    compose: "/srv/home-apps/dockge/compose.yaml"
   tasks:
     - name: Git update home-apps repo
       ansible.builtin.git:

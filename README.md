@@ -1,6 +1,6 @@
 # Homepi docker setup
 
 ```
-ansible-playbook deploy.yml
-ansible-playbook --limit dev --extra-vars="compose=/srv/home-apps/dev/docker-compose.yml" deploy.yml
+ansible-playbook deploy.yaml
+ansible-playbook --limit dev --extra-vars="compose=/srv/home-apps/dev/compose.yaml" deploy.yaml
 ```

@@ -1,0 +1,17 @@
+services:
+  homebridge:
+    container_name: homebridge
+    image: oznu/homebridge:latest
+    restart: unless-stopped
+    network_mode: host
+    expose:
+      - 8581
+    volumes:
+      - ./:/homebridge
+    environment:
+      - ENABLE_AVAHI=0
+    logging:
+      driver: json-file
+      options:
+        max-size: "10mb"
+        max-file: "1"
