@@ -4,3 +4,15 @@
         icon: dozzle
         description: Docker log monitor
         container: dozzle
+
+    - Homebridge:
+        href: http://homebridge.app.home/
+        icon: homebridge
+        description: Homebridge for HomeKit
+        container: homebridge
+
+    - Dockge:
+        href: http://dockge.app.home/
+        icon: docker-moby
+        description: Docker stack manager
+        container: dockge
