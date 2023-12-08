@@ -24,7 +24,7 @@
         container: watchtower
         widget:
           type: watchtower
-          url: http://watchtower.app.home/
+          url: http://localhost:8086/
           key: mytoken
 
     - Blocky:
