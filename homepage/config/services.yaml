@@ -1,0 +1,6 @@
+- Services:
+    - Dozzle:
+        href: http://log.app.home/
+        icon: dozzle
+        description: Docker log monitor
+        container: dozzle
