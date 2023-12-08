@@ -1,7 +1,9 @@
 title: app.home
 showStats: true
 base: http://app.home/
-background: https://images.unsplash.com/photo-1488239585740-f5be6038763f?q=80&w=1472&auto=format&fit=crop
+background: 
+  image: https://images.unsplash.com/photo-1488239585740-f5be6038763f?q=80&w=1472&auto=format&fit=crop
+  brightness: 50
 headerStyle: boxed
 theme: dark
 
