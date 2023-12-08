@@ -1,4 +1,4 @@
-- Services:
+- app.home:
     - Dozzle:
         href: http://log.app.home/
         icon: dozzle
@@ -32,3 +32,14 @@
         icon: blocky
         description: DNS Server
         container: blocky
+
+- network:
+    - Router:
+        href: http://router.app.home/
+        icon: router
+        description: Router
+
+    - Linksys Velop:
+        href: http://velop.app.home/
+        icon: router
+        description: Velop Mesh Wifi
