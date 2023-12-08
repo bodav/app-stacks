@@ -16,3 +16,15 @@
         icon: docker-moby
         description: Docker stack manager
         container: dockge
+
+    - Watchtower:
+        href: http://watchtower.app.home/
+        icon: watchtower
+        description: Docker image updater
+        container: watchtower
+
+    - Blocky:
+        href: http://blocky.app.home/
+        icon: blocky
+        description: DNS Server
+        container: blocky
