@@ -4,7 +4,7 @@ services:
     container_name: watchtower
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-    command: --debug --http-api-update --label-enable
+    command: --debug --http-api-update --label-enable --http-api-metrics
     environment:
       - WATCHTOWER_HTTP_API_TOKEN=mytoken
     ports:

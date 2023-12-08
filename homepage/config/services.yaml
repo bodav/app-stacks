@@ -22,6 +22,10 @@
         icon: watchtower
         description: Docker image updater
         container: watchtower
+        widget:
+          type: watchtower
+          url: http://watchtower.app.home/
+          key: mytoken
 
     - Blocky:
         href: http://blocky.app.home/
