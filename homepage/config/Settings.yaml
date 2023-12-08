@@ -1,7 +1,0 @@
-title: My Awesome Homepage
-showStats: true
-
-layout:
-  Services:
-    style: row
-    columns: 4
