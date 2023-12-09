@@ -1,4 +1,4 @@
-- app.home:
+- Apps:
     - Dozzle:
         href: http://log.app.home/
         icon: dozzle
@@ -34,12 +34,12 @@
         container: blocky
 
     - LGTvApiProxy:
-        href: http://lgtvapiproxy.app.home/
+        href: http://lgtvapiproxy.app.home/api/lgtv/commands
         icon: webhook
-        description: Rest proxy for LG Tv
+        description: REST Proxy for LG Tv
         container: lgtvapiproxy
 
-- network:
+- Network:
     - Router:
         href: http://router.home/
         icon: router
