@@ -13,9 +13,9 @@ quicklaunch:
   hideVisitURL: true
 
 layout:
-  app.home:
+  Apps:
     style: row
     columns: 3
-  network:
+  Network:
     style: row
     columns: 3
