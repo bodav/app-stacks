@@ -33,13 +33,19 @@
         description: DNS Server
         container: blocky
 
+    - LGTvApiProxy:
+        href: http://lgtvapiproxy.app.home/
+        icon: webhook
+        description: Rest proxy for LG Tv
+        container: lgtvapiproxy
+
 - network:
     - Router:
-        href: http://router.app.home/
+        href: http://router.home/
         icon: router
         description: Router
 
     - Linksys Velop:
-        href: http://velop.app.home/
+        href: http://velop.home/
         icon: router
-        description: Velop Mesh Wifi
+        description: Velop Wifi
