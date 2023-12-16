@@ -1,4 +1,4 @@
-- app.home:
+- Apps:
     - Dozzle:
         href: http://log.app.home/
         icon: dozzle
@@ -33,13 +33,19 @@
         description: DNS Server
         container: blocky
 
-- network:
+    - LGTvApiProxy:
+        href: http://lgtvapiproxy.app.home/api/lgtv/commands
+        icon: webhook
+        description: REST Proxy for LG Tv
+        container: lgtvapiproxy
+
+- Network:
     - Router:
-        href: http://router.app.home/
+        href: http://router.home/
         icon: router
         description: Router
 
     - Linksys Velop:
-        href: http://velop.app.home/
+        href: http://velop.home/
         icon: router
-        description: Velop Mesh Wifi
+        description: Velop Wifi
