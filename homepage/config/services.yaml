@@ -17,9 +17,9 @@
         description: Docker stack manager
         container: dockge
 
-    - Watchtower:
+    - WhatsupDocker:
         href: http://wud.app.home/
-        icon: whatsupdocker
+        icon: whats-up-docker
         description: Docker image updater
         container: wud
 
