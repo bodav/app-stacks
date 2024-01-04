@@ -1,6 +1,6 @@
 services:
   whatsupdocker:
-    image: fmartinou/whats-up-docker
+    image: fmartinou/whats-up-docker:latest
     container_name: wud
     restart: unless-stopped
     volumes:
