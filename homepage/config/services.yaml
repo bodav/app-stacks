@@ -17,10 +17,10 @@
         description: Docker stack manager
         container: dockge
 
-    - WhatsupDocker:
+    - WhatsUpDocker:
         href: http://wud.app.home/
         icon: whats-up-docker
-        description: Docker image updater
+        description: Docker image watcher
         container: wud
 
     - Blocky:
