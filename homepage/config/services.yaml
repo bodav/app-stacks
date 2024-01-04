@@ -18,14 +18,10 @@
         container: dockge
 
     - Watchtower:
-        href: http://watchtower.app.home/
-        icon: watchtower
+        href: http://wud.app.home/
+        icon: whatsupdocker
         description: Docker image updater
-        container: watchtower
-        widget:
-          type: watchtower
-          url: http://watchtower.app.home/
-          key: mytoken
+        container: wud
 
     - Blocky:
         href: http://blocky.app.home/
