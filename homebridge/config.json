@@ -6,28 +6,7 @@
     "pin": "171-70-540",
     "advertiser": "bonjour-hap"
   },
-  "accessories": [
-    {
-      "accessory": "HTTP-SWITCH",
-      "name": "TV Off",
-      "switchType": "stateless",
-      "timeout": 1000,
-      "onUrl": {
-        "url": "http://127.0.0.1:3080/api/lgtv/855692/handlekeyinput/TV_CMD_POWER",
-        "requestTimeout": 3000
-      }
-    },
-    {
-      "accessory": "HTTP-SWITCH",
-      "name": "TV Mute",
-      "switchType": "stateless",
-      "timeout": 1000,
-      "onUrl": {
-        "url": "http://127.0.0.1:3080/api/lgtv/855692/handlekeyinput/TV_CMD_MUTE_TOGGLE",
-        "requestTimeout": 3000
-      }
-    }
-  ],
+  "accessories": [],
   "platforms": [
     {
       "name": "Config",
@@ -41,6 +20,19 @@
       "name": "Sonos",
       "service": "fan",
       "platform": "ZP"
+    },
+    {
+      "platform": "netcasttv",
+      "devices": [
+        {
+          "name": "LG TV",
+          "host": "192.168.1.207",
+          "mac": "192.168.1.207",
+          "accessToken": "855692",
+          "keyInputDelay": 600,
+          "offPauseDuration": 600000
+        }
+      ]
     }
   ]
 }

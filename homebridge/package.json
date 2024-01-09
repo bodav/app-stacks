@@ -2,6 +2,6 @@
   "dependencies": {
     "homebridge": "1.7.0",
     "homebridge-zp": "1.4.39",
-    "homebridge-http-switch": "0.5.36"
+    "homebridge-netcast-tv": "^2.0.2"
   }
 }

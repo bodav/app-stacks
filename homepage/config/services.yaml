@@ -29,12 +29,6 @@
         description: DNS Server
         container: blocky
 
-    - LGTvApiProxy:
-        href: http://lgtvapiproxy.app.home/api/lgtv/commands
-        icon: webhook
-        description: REST Proxy for LG Tv
-        container: lgtvapiproxy
-
 - Network:
     - Router:
         href: http://router.home/
