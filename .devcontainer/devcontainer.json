@@ -7,7 +7,7 @@
   },
   "customizations": {
     "vscode": {
-      "extensions": ["redhat.ansible"]
+      "extensions": ["redhat.ansible", "ms-azuretools.vscode-docker"]
     }
   }
 }
