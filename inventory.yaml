@@ -1,12 +1,8 @@
-all:
-  children:
-    srv:
-      hosts:
-        homepi.local:
-          ansible_ssh_user: pi
-
-    dev:
-      hosts:
-        devpi.local:
-          ansible_ssh_user: pi
-          
+home:
+  hosts:
+    homepi.local:
+      ansible_user: '{{ lookup("env", "ANSIBLE_USER") }}'
+      ansible_password: '{{ lookup("env", "ANSIBLE_PASSWORD") }}'
+    devpi.local:
+      ansible_user: '{{ lookup("env", "ANSIBLE_USER") }}'
+      ansible_password: '{{ lookup("env", "ANSIBLE_PASSWORD") }}'

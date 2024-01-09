@@ -1,0 +1,24 @@
+- name: Deploy docker compose
+  hosts: all
+  become: true
+  tasks:
+    - name: Git update home-apps repo
+      ansible.builtin.git:
+        repo: "https://github.com/bodav/home-apps.git"
+        dest: /srv/home-apps
+        force: true
+        version: HEAD # noqa: latest
+      notify: "bounce docker compose"
+
+  handlers:
+    - name: Docker compose pull
+      ansible.builtin.command: "docker compose -f /srv/home-apps/dockge/compose.yaml pull"
+      listen: "bounce docker compose"
+
+    - name: Docker compose down
+      ansible.builtin.command: "docker compose -f /srv/home-apps/dockge/compose.yaml down --remove-orphans"
+      listen: "bounce docker compose"
+
+    - name: Docker compose up
+      ansible.builtin.command: "docker compose -f /srv/home-apps/dockge/compose.yaml up -d"
+      listen: "bounce docker compose"

@@ -1,8 +1,6 @@
 - name: Deploy docker compose
   hosts: all
   become: true
-  vars:
-    compose: "/srv/home-apps/dockge/compose.yaml"
   tasks:
     - name: Git update home-apps repo
       ansible.builtin.git:

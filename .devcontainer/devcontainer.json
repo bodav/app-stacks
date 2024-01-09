@@ -1,0 +1,13 @@
+{
+  "build": { "dockerfile": "Dockerfile" },
+  "runArgs": ["--env-file", ".devcontainer/ansible.env"],
+  "containerEnv": {
+    "ANSIBLE_VERBOSITY": "2",
+    "ANSIBLE_INVENTORY": "inventory.yaml"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["redhat.ansible"]
+    }
+  }
+}
