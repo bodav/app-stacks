@@ -1,4 +1,5 @@
 {
+  "name": "ansible-devcontainer",
   "build": { "dockerfile": "Dockerfile" },
   "runArgs": ["--env-file", ".devcontainer/ansible.env"],
   "containerEnv": {
@@ -7,7 +8,10 @@
   },
   "customizations": {
     "vscode": {
-      "extensions": ["redhat.ansible", "ms-azuretools.vscode-docker"]
+      "extensions": ["redhat.ansible", "ms-azuretools.vscode-docker"],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh"
+      }
     }
   }
 }
