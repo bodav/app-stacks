@@ -6,5 +6,7 @@
       ansible.builtin.git:
         repo: "https://github.com/bodav/home-apps.git"
         dest: /srv/home-apps
+        depth: 1
         force: true
-        version: HEAD # noqa: latest
+        version: network
+        # version: HEAD # noqa: latest
