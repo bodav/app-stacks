@@ -10,6 +10,8 @@ services:
       - reverseproxy-net
 #    ports:
 #      - 8089:3000
+    expose:
+      - "3000"
     environment:
       - WUD_WATCHER_LOCAL_CRON=0 1 * * *
       #- WUD_TRIGGER_PUSHOVER_1_TOKEN=${PUSHOVER_TOKEN}
