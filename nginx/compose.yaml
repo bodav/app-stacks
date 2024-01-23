@@ -3,7 +3,7 @@ services:
     container_name: nginx
     image: nginx:latest
     networks:
-      - reverseproxy-net
+      - reverseproxy
     restart: unless-stopped
     ports:
       - "80:80"
