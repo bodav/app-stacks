@@ -7,7 +7,7 @@
         repo: "https://github.com/bodav/home-apps.git"
         dest: /srv/home-apps
         force: true
-        version: HEAD # noqa: latest
+        version: network
       notify: "bounce docker compose"
 
   handlers:
