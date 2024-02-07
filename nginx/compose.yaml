@@ -12,4 +12,3 @@ services:
 
 networks:
   reverseproxy:
-    name: reverseproxy-net
