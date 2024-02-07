@@ -1,4 +1,4 @@
-- app.home:
+- app:
       - Dozzle:
             href: http://log.app.home/
             icon: dozzle
@@ -29,7 +29,7 @@
             description: DNS Server
             container: blocky
 
-- dev.home:
+- dev:
       - Dozzle:
             href: http://log.dev.home/
             icon: dozzle

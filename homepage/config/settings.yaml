@@ -13,10 +13,10 @@ quicklaunch:
   hideVisitURL: true
 
 layout:
-  app.home:
+  app:
     style: row
     columns: 3
-  dev.home:.home:
+  dev:
     style: row
     columns: 3
   Network:
