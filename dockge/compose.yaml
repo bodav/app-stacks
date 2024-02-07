@@ -11,3 +11,9 @@ services:
       - /srv/home-apps:/srv/home-apps
     environment:
       - DOCKGE_STACKS_DIR=/srv/home-apps
+    networks:
+      - reverseproxy
+
+networks:
+  reverseproxy:
+    external: true
