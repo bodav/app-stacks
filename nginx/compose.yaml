@@ -12,3 +12,4 @@ services:
 
 networks:
   reverseproxy:
+    name: reverseproxy
