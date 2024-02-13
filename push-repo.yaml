@@ -8,5 +8,4 @@
         dest: /srv/home-apps
         depth: 1
         force: true
-        version: network
-        # version: HEAD # noqa: latest
+        version: master
