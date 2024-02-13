@@ -8,4 +8,4 @@
         dest: /srv/home-apps
         depth: 1
         force: true
-        version: master
+        version: main
