@@ -1,41 +1,52 @@
-- Apps:
-    - Dozzle:
-        href: http://log.app.home/
-        icon: dozzle
-        description: Docker log monitor
-        container: dozzle
+- app:
+      - Dozzle:
+            href: http://log.app.home/
+            icon: dozzle
+            description: Docker log monitor
+            container: dozzle
 
-    - Homebridge:
-        href: http://homebridge.app.home/
-        icon: homebridge
-        description: Homebridge for HomeKit
-        container: homebridge
+      - Homebridge:
+            href: http://homebridge.app.home/
+            icon: homebridge
+            description: Homebridge for HomeKit
+            container: homebridge
 
-    - Dockge:
-        href: http://dockge.app.home/
-        icon: docker-moby
-        description: Docker stack manager
-        container: dockge
+      - Dockge:
+            href: http://dockge.app.home/
+            icon: docker-moby
+            description: Docker stack manager
+            container: dockge
 
-    - WhatsUpDocker:
-        href: http://wud.app.home/
-        icon: whats-up-docker
-        description: Docker image watcher
-        container: wud
+      - WhatsUpDocker:
+            href: http://wud.app.home/
+            icon: whats-up-docker
+            description: Docker image watcher
+            container: wud
 
-    - Blocky:
-        href: http://blocky.app.home/
-        icon: blocky
-        description: DNS Server
-        container: blocky
+      - Blocky:
+            href: http://blocky.app.home/
+            icon: blocky
+            description: DNS Server
+            container: blocky
+
+- dev:
+      - Dozzle:
+            href: http://log.dev.home/
+            icon: dozzle
+            description: Docker log monitor
+
+      - Dockge:
+            href: http://dockge.dev.home/
+            icon: docker-moby
+            description: Docker stack manager
 
 - Network:
-    - Router:
-        href: http://router.home/
-        icon: router
-        description: Router
+      - Router:
+            href: http://router.home/
+            icon: router
+            description: Router
 
-    - Linksys Velop:
-        href: http://velop.home/
-        icon: router
-        description: Velop Wifi
+      - Linksys Velop:
+            href: http://velop.home/
+            icon: router
+            description: Velop Wifi

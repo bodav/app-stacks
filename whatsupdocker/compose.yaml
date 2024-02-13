@@ -6,9 +6,13 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - ./store:/store
-    ports:
-      - 8089:3000
+    networks:
+      - reverseproxy
     environment:
       - WUD_WATCHER_LOCAL_CRON=0 1 * * *
-      - WUD_TRIGGER_PUSHOVER_1_TOKEN=${PUSHOVER_TOKEN}
-      - WUD_TRIGGER_PUSHOVER_1_USER=${PUSHOVER_USER}
+      #- WUD_TRIGGER_PUSHOVER_1_TOKEN=${PUSHOVER_TOKEN}
+      #- WUD_TRIGGER_PUSHOVER_1_USER=${PUSHOVER_USER}
+
+networks:
+  reverseproxy:
+    external: true

@@ -3,6 +3,12 @@ home:
     homepi.local:
       ansible_user: '{{ lookup("env", "ANSIBLE_USER") }}'
       ansible_password: '{{ lookup("env", "ANSIBLE_PASSWORD") }}'
+    app.home:
+      ansible_user: '{{ lookup("env", "ANSIBLE_USER") }}'
+      ansible_password: '{{ lookup("env", "ANSIBLE_PASSWORD") }}'
     devpi.local:
+      ansible_user: '{{ lookup("env", "ANSIBLE_USER") }}'
+      ansible_password: '{{ lookup("env", "ANSIBLE_PASSWORD") }}'
+    dev.home:
       ansible_user: '{{ lookup("env", "ANSIBLE_USER") }}'
       ansible_password: '{{ lookup("env", "ANSIBLE_PASSWORD") }}'
