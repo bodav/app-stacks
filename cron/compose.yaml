@@ -1,0 +1,5 @@
+services:
+  cron:
+    build: .
+    container_name: cron
+    restart: unless-stopped
