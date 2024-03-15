@@ -3,3 +3,7 @@ services:
     build: .
     container_name: cron
     restart: unless-stopped
+    environment:
+      - REPO=https://github.com/bodav/ansible-cron
+      - ANSIBLE_PASSWORD=${ANSIBLE_PWD}
+      - ANSIBLE_USER=${ANSIBLE_USER}
