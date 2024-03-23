@@ -4,6 +4,8 @@ services:
     image: nginx:latest
     networks:
       - reverseproxy
+    extra_hosts:
+      - "host.docker.internal:host-gateway"      
     restart: unless-stopped
     ports:
       - "80:80"
