@@ -14,7 +14,8 @@
       "extensions": [
         "redhat.ansible",
         "ms-azuretools.vscode-docker",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "ahmadalli.vscode-nginx-conf"
       ],
       "settings": {
         "terminal.integrated.defaultProfile.linux": "zsh"
