@@ -3,7 +3,7 @@ services:
     container_name: nginx
     image: nginx:latest
     networks:
-      - reverseproxy
+      - appnet
     restart: unless-stopped
     ports:
       - "80:80"
@@ -11,5 +11,5 @@ services:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
 
 networks:
-  reverseproxy:
+  appnet:
     external: true

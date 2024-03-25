@@ -8,12 +8,12 @@ services:
       - "53:53/udp"
       - "8083:4000/tcp"
     networks:
-      - reverseproxy
+      - appnet
     extra_hosts:
       - "host.docker.internal:host-gateway"   
     volumes:
       - ./config.yml:/app/config.yml
 
 networks:
-  reverseproxy:
-    name: reverseproxy
+  appnet:
+    name: appnet
