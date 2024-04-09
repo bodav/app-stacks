@@ -8,11 +8,12 @@
       "type": "shell",
       "group": "none",
       "detail": "Remote git pull",
-      "command": "ansible-playbook --limit homepi.local pushrepo.yaml",
+      "command": "ansible-playbook --limit homepi.local push-repo.yaml",
       "presentation": {
         "reveal": "always",
         "panel": "new"
-      }
+      },
+      "problemMatcher": []
     }
   ]
 }
