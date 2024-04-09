@@ -9,6 +9,8 @@ services:
       - "8083:4000/tcp"
     networks:
       - appnet
+    healthcheck:
+      disable: true
     extra_hosts:
       - "host.docker.internal:host-gateway"   
     volumes:
