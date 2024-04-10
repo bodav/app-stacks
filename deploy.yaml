@@ -6,11 +6,14 @@
     pull_images: true
     project_dir: "/srv/home-apps"
     compose:
+      - ./blocky/compose.yaml
       - ./nginx/compose.yaml
       - ./dozzle/compose.yaml
       - ./dockge/compose.yaml
       - ./homepage/compose.yaml
       - ./whatsupdocker/compose.yaml
+      - ./syslog/compose.yaml
+      - ./homebridge/compose.yaml
   tasks:
     - name: Git update home-apps repo
       ansible.builtin.git:
