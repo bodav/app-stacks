@@ -7,11 +7,23 @@
       "label": "Push Repo",
       "type": "shell",
       "group": "none",
-      "detail": "Remote git pull",
+      "detail": "push changes to host",
       "command": "ansible-playbook --limit homepi.local push-repo.yaml",
       "presentation": {
         "reveal": "always",
-        "panel": "new"
+        "panel": "new",
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Deploy stacks",
+      "type": "shell",
+      "group": "none",
+      "detail": "compose down/pull/up",
+      "command": "ansible-playbook --limit homepi.local deploy.yaml",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
       },
       "problemMatcher": []
     }
