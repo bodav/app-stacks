@@ -4,7 +4,7 @@ services:
     image: alpine:edge
     volumes:
       - /var/log/syslog:/var/log/stream.log
-    command: "tail -s 3 -F /var/log/stream.log"
+    command: "tail -s 3 -F /var/log/stream.log | grep 'CRON'"
     network_mode: none
     restart: unless-stopped
     logging:
