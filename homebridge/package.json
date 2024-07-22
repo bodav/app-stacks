@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "homebridge": "1.7.0",
-    "homebridge-zp": "1.4.45",
+    "homebridge": "1.8.4",
+    "homebridge-zp": "1.4.46",
     "homebridge-netcast-tv": "^2.0.2"
   }
 }
