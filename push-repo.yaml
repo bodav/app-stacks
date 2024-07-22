@@ -2,10 +2,10 @@
   hosts: all
   become: true
   tasks:
-    - name: Git update home-apps repo
+    - name: Git update repo
       ansible.builtin.git:
-        repo: "https://github.com/bodav/home-apps.git"
-        dest: /srv/home-apps
+        repo: "https://github.com/bodav/app-stacks.git"
+        dest: /opt/docker/app-stacks
         depth: 1
         force: true
         version: main

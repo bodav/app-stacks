@@ -8,14 +8,8 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - ./data:/app/data
-      - /srv/home-apps:/srv/home-apps
+      - /opt/docker/app-stacks:/opt/docker/app-stacks
     environment:
-      - DOCKGE_STACKS_DIR=/srv/home-apps
+      - DOCKGE_STACKS_DIR=/opt/docker/app-stacks
     healthcheck:
       disable: true
-    networks:
-      - appnet
-
-networks:
-  appnet:
-    external: true

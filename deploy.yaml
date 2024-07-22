@@ -4,20 +4,18 @@
   gather_facts: false
   vars:
     pull_images: true
-    project_dir: "/srv/home-apps"
+    project_dir: "/opt/docker/app-stacks"
     compose:
       - ./blocky/compose.yaml
       - ./nginx/compose.yaml
       - ./dozzle/compose.yaml
       - ./dockge/compose.yaml
       - ./homepage/compose.yaml
-      - ./whatsupdocker/compose.yaml
-      - ./syslog/compose.yaml
       - ./homebridge/compose.yaml
   tasks:
-    - name: Git update home-apps repo
+    - name: Git update repo
       ansible.builtin.git:
-        repo: "https://github.com/bodav/home-apps.git"
+        repo: "https://github.com/bodav/app-stacks.git"
         dest: "{{ project_dir }}"
         force: true
         version: main

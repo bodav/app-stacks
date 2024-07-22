@@ -3,7 +3,7 @@ services:
     container_name: nginx
     image: nginx:latest
     networks:
-      - appnet
+      - proxynet
     restart: unless-stopped
     ports:
       - "80:80"
@@ -16,5 +16,5 @@ services:
         max-file: "1"
 
 networks:
-  appnet:
-    external: true
+  proxynet:
+    name: proxynet
