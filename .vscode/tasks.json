@@ -8,7 +8,7 @@
       "type": "shell",
       "group": "none",
       "detail": "push changes to host",
-      "command": "ansible-playbook --limit homepi.local push-repo.yaml",
+      "command": "ansible-playbook --limit prod push-repo.yaml",
       "presentation": {
         "reveal": "always",
         "panel": "new",
@@ -20,7 +20,7 @@
       "type": "shell",
       "group": "none",
       "detail": "compose down/pull/up",
-      "command": "ansible-playbook --limit homepi.local deploy.yaml",
+      "command": "ansible-playbook --limit prod deploy.yaml",
       "presentation": {
         "reveal": "always",
         "panel": "new",
