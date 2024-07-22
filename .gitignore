@@ -86,3 +86,4 @@ $RECYCLE.BIN/
 .devcontainer/ansible.env
 cron/.env
 dockge/data/*
+gotify/data/*
