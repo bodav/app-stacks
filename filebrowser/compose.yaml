@@ -7,5 +7,4 @@ services:
       - ./config.json:/.filebrowser.json
     ports:
       - 5003:80
-    healthcheck:
-      disable: true
+

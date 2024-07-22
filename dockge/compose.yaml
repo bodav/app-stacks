@@ -11,5 +11,4 @@ services:
       - /opt/docker/app-stacks:/opt/docker/app-stacks
     environment:
       - DOCKGE_STACKS_DIR=/opt/docker/app-stacks
-    healthcheck:
-      disable: true
+
