@@ -10,7 +10,7 @@ providers:
 
 notif:
   gotify:
-    endpoint: http://oddball.local:5004
+    endpoint: http://host.docker.internal:5004
     token: Ac4FWcevT5DtAGR
     priority: 1
     timeout: 10s
