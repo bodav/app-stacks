@@ -6,22 +6,34 @@
         container: dozzle
 
     - Homebridge:
-        href: http://homebridge.app.home/
+        href: /homebridge
         icon: homebridge
         description: Homebridge for HomeKit
         container: homebridge
 
     - Dockge:
-        href: http://dockge.app.home/
+        href: /dockge
         icon: docker-moby
         description: Docker stack manager
         container: dockge
 
     - Blocky:
-        href: http://blocky.app.home/static/rapidoc.html
+        href: /blocky
         icon: blocky
         description: DNS Server
         container: blocky
+
+    - Gotify:
+        href: /gotify
+        icon: gotify
+        description: notifications
+        container: gotify
+
+    - Gotify:
+        href: /filebrowser
+        icon: filebrowser
+        description: filebrowser
+        container: filebrowser
 
 - Network:
     - Router:
