@@ -1,11 +1,11 @@
 prod:
   hosts:
-    oddball.local:
+    srv.local:
       ansible_user: '{{ lookup("env", "ANSIBLE_USER") }}'
       ansible_password: '{{ lookup("env", "ANSIBLE_PASSWORD") }}'
 
 dev:
   hosts:
-    homepi.local:
+    dev.local:
       ansible_user: '{{ lookup("env", "ANSIBLE_USER") }}'
       ansible_password: '{{ lookup("env", "ANSIBLE_PASSWORD") }}'
