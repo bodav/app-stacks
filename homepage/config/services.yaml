@@ -26,13 +26,13 @@
     - Gotify:
         href: /gotify
         icon: gotify
-        description: notifications
+        description: Notifications
         container: gotify
 
     - Filebrowser:
         href: /filebrowser
         icon: filebrowser
-        description: filebrowser
+        description: Filebrowser
         container: filebrowser
 
 - Network:
