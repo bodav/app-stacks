@@ -29,7 +29,7 @@
         description: notifications
         container: gotify
 
-    - Gotify:
+    - Filebrowser:
         href: /filebrowser
         icon: filebrowser
         description: filebrowser
