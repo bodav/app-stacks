@@ -1,6 +1,6 @@
 - app:
     - Dozzle:
-        href: http://log.app.home/
+        href: /dozzle
         icon: dozzle
         description: Docker log monitor
         container: dozzle
@@ -17,12 +17,6 @@
         description: Docker stack manager
         container: dockge
 
-    - WhatsUpDocker:
-        href: http://wud.app.home/
-        icon: whats-up-docker
-        description: Docker image watcher
-        container: wud
-
     - Blocky:
         href: http://blocky.app.home/static/rapidoc.html
         icon: blocky
@@ -31,11 +25,11 @@
 
 - Network:
     - Router:
-        href: http://router.home/
+        href: http://192.168.0.1/
         icon: router
         description: Router
 
     - Linksys Velop:
-        href: http://velop.home/
+        href: http://192.168.1.1/
         icon: router
         description: Velop Wifi
