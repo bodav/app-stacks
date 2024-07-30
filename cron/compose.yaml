@@ -1,9 +1,10 @@
 services:
   cron:
-    build: .
-    container_name: cron
+    container_name: lgtvapiproxy
+    image: ghcr.io/bodav/ansible-cron:main
     restart: unless-stopped
     environment:
       - REPO=https://github.com/bodav/ansible-cron
       - ANSIBLE_PASSWORD=${ANSIBLE_PWD}
       - ANSIBLE_USER=${ANSIBLE_USER}
+      - GOTIFY_URL=${GOTIFY_URL}
