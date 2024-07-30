@@ -1,6 +1,6 @@
 services:
   cron:
-    container_name: lgtvapiproxy
+    container_name: cron
     image: ghcr.io/bodav/ansible-cron:main
     restart: unless-stopped
     environment:
