@@ -87,3 +87,5 @@ $RECYCLE.BIN/
 cron/.env
 dockge/data/*
 gotify/data/*
+jellyfin/cache/*
+jellyfin/config/*
