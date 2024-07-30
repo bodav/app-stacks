@@ -8,6 +8,8 @@ services:
       - ./jellyfin/cache:/cache
       - /srv/appdata/media:/media
     restart: unless-stopped
+    expose:
+      - 8096
     extra_hosts:
       - 'host.docker.internal:host-gateway'
     logging:
