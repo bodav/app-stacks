@@ -35,6 +35,18 @@
         description: Filebrowser
         container: filebrowser
 
+    - Metube:
+        href: /metube
+        icon: metube
+        description: Metube
+        container: metube
+
+    - Jellyfin:
+        href: /jellyfin
+        icon: jellyfin
+        description: Jellyfin
+        container: jellyfin
+
 - Network:
     - Router:
         href: http://192.168.0.1/
