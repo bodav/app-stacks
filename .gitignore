@@ -91,6 +91,7 @@ jellyfin/cache/*
 jellyfin/config/*
 diun/data/*
 homepage/config/logs/*
+btstack/*
 
 homebridge/.npmrc
 homebridge/.uix-dashboard.json
