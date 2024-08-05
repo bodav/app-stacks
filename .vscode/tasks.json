@@ -6,19 +6,7 @@
       "type": "shell",
       "group": "none",
       "detail": "push changes to host",
-      "command": "ansible-playbook --limit prod push-repo.yaml",
-      "presentation": {
-        "reveal": "always",
-        "panel": "new",
-      },
-      "problemMatcher": []
-    },
-    {
-      "label": "Deploy stacks",
-      "type": "shell",
-      "group": "none",
-      "detail": "compose down/pull/up",
-      "command": "ansible-playbook --limit prod deploy.yaml",
+      "command": "make push",
       "presentation": {
         "reveal": "always",
         "panel": "new",

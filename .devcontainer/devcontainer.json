@@ -15,7 +15,8 @@
         "redhat.ansible",
         "ms-azuretools.vscode-docker",
         "esbenp.prettier-vscode",
-        "ahmadalli.vscode-nginx-conf"
+        "ahmadalli.vscode-nginx-conf",
+        "ms-vscode.makefile-tools"
       ],
       "settings": {
         "terminal.integrated.defaultProfile.linux": "zsh"

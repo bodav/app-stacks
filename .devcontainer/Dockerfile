@@ -2,7 +2,7 @@ FROM alpine:edge
 
 ENV DEVCONTAINER=true
 
-RUN apk add --no-cache git python3 ansible ansible-lint py3-pip openssh sshpass zsh zsh-vcs bind-tools curl
+RUN apk add --no-cache git make python3 ansible ansible-lint py3-pip openssh sshpass zsh zsh-vcs bind-tools curl
 
 RUN sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 RUN sh -c "git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
