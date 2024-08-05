@@ -89,3 +89,16 @@ dockge/data/*
 gotify/data/*
 jellyfin/cache/*
 jellyfin/config/*
+diun/data/*
+homepage/config/logs/*
+
+homebridge/.npmrc
+homebridge/.uix-dashboard.json
+homebridge/.uix-secrets
+homebridge/accessories/*
+homebridge/auth.json
+homebridge/backups/*
+homebridge/homebridge.log
+homebridge/node_modules/*
+homebridge/persist/*
+homebridge/startup.sh
