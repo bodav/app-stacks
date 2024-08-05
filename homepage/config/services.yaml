@@ -47,6 +47,16 @@
         description: Jellyfin
         container: jellyfin
 
+    - Download:
+        href: /download
+        icon: rclone
+        description: Download manager
+
+    - Search:
+        href: /filesearch
+        icon: requestrr
+        description: File searcher
+
 - Network:
     - Router:
         href: http://192.168.0.1/
