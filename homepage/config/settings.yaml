@@ -1,7 +1,7 @@
-title: home
+title: srv.local
 showStats: true
 background:
-  image: https://images.unsplash.com/photo-1702311178078-1edf877d3afe?q=80&w=1932&auto=format&fit=crop
+  image: https://images.unsplash.com/photo-1722809431357-9403c62c46dc?q=80&w=3475&auto=format&fit=crop
   brightness: 50
 headerStyle: boxed
 theme: dark
