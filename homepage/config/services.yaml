@@ -63,7 +63,7 @@
         icon: router
         description: Router
 
-    - Linksys Velop:
-        href: http://192.168.1.1/
-        icon: router
-        description: Velop Wifi
+    - Unifi:
+        href: http://unifi.ui.com/
+        icon: Unifi
+        description: Unifi UI
