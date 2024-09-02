@@ -5,7 +5,7 @@
   },
   "runArgs": ["--env-file", ".devcontainer/ansible.env"],
   "containerEnv": {
-    "ANSIBLE_VERBOSITY": "2",
+    "ANSIBLE_VERBOSITY": "3",
     "ANSIBLE_HOST_KEY_CHECKING": "False",
     "ANSIBLE_INVENTORY": "inventory.yaml"
   },
@@ -17,10 +17,7 @@
         "esbenp.prettier-vscode",
         "ahmadalli.vscode-nginx-conf",
         "ms-vscode.makefile-tools"
-      ],
-      "settings": {
-        "terminal.integrated.defaultProfile.linux": "zsh"
-      }
+      ]
     }
   }
 }
