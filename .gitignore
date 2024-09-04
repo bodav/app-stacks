@@ -92,6 +92,8 @@ jellyfin/config/*
 diun/data/*
 homepage/config/logs/*
 btstack/*
+olivetin/.env
+olivetin/custom-webui/*
 
 homebridge/.npmrc
 homebridge/.uix-dashboard.json

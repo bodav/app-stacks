@@ -1,0 +1,7 @@
+listenAddressSingleHTTPFrontend: 0.0.0.0:8080
+logLevel: "INFO"
+checkForUpdates: true
+
+actions:
+  - title: "Hello world!"
+    shell: echo 'Hello World!'

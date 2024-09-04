@@ -1,4 +1,4 @@
-- app:
+- Apps:
     - Dozzle:
         href: /dozzle
         icon: dozzle
@@ -34,6 +34,12 @@
         icon: filebrowser
         description: Filebrowser
         container: filebrowser
+
+    - OliveTin:
+        href: /olivetin
+        icon: olivetin
+        description: OliveTin
+        container: olivetin        
 
     - Metube:
         href: /metube
