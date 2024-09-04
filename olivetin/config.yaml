@@ -10,3 +10,5 @@ actions:
     icon: "&#x1F1E6;"
     shell: ansible-playbook --limit dockerhost /opt/ops/playbooks/ping.yml
     timeout: 120
+    popupOnStart: execution-dialog-stdout-only
+    maxConcurrent: 1
