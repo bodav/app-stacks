@@ -2,7 +2,7 @@ FROM alpine:edge
 
 ARG TARGETARCH
 
-RUN apk add --update --no-cache git make ansible ansible-lint openssh sshpass curl && \
+RUN apk add --update --no-cache git ansible ansible-lint openssh sshpass && \
     find /usr/lib/ -name '__pycache__' -print0 | xargs -0 -n1 rm -rf && \
     find /usr/lib/ -name '*.pyc' -print0 | xargs -0 -n1 rm -rf && \
     wget https://github.com/OliveTin/OliveTin/releases/latest/download/OliveTin_linux_${TARGETARCH}.apk && \
