@@ -3,8 +3,12 @@ logLevel: "INFO"
 checkForUpdates: true
 
 actions:
-  - title: "Hello world!"
-    shell: echo 'Hello World!'
+  - title: docker prune
+    icon: '<iconify-icon icon="file-icons:ansible-alt"></iconify-icon>'
+    shell: ansible-playbook --limit dockerhost /opt/ops/playbooks/dockerprune.yaml
+    timeout: 120
+    popupOnStart: execution-dialog-stdout-only
+    maxConcurrent: 1
 
   - title: apt upgrade
     icon: '<iconify-icon icon="file-icons:ansible-alt"></iconify-icon>'
@@ -13,8 +17,8 @@ actions:
     popupOnStart: execution-dialog-stdout-only
     maxConcurrent: 1
 
-  - title: Run Ansible Playbook
-    icon: "&#x1F1E6;"
+  - title: ping host
+    icon: '<iconify-icon icon="file-icons:ansible-alt"></iconify-icon>'
     shell: ansible-playbook --limit dockerhost /opt/ops/playbooks/ping.yml
     timeout: 120
     popupOnStart: execution-dialog-stdout-only
