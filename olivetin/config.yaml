@@ -23,3 +23,14 @@ actions:
     timeout: 120
     popupOnStart: execution-dialog-stdout-only
     maxConcurrent: 1
+
+  - title: pull stack
+    icon: '<iconify-icon icon="file-icons:ansible-alt"></iconify-icon>'
+    shell: ansible-playbook --limit dockerhost --extra-vars "composefile={{ composestack }}" /opt/ops/playbooks/redeploycontainer.yaml
+    timeout: 120
+    popupOnStart: execution-dialog-stdout-only
+    maxConcurrent: 1
+    arguments:
+      - name: composestack
+        default: /opt/docker/
+        type: very_dangerous_raw_string
