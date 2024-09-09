@@ -12,6 +12,9 @@ quicklaunch:
   hideVisitURL: true
 
 layout:
+  Ops:
+    style: row
+    columns: 3
   Apps:
     style: row
     columns: 3

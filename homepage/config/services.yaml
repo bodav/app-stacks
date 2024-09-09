@@ -1,21 +1,29 @@
-- Apps:
+- Ops:
     - Dozzle:
         href: /dozzle
         icon: dozzle
         description: Docker log monitor
         container: dozzle
 
-    - Homebridge:
-        href: /homebridge
-        icon: homebridge
-        description: Homebridge for HomeKit
-        container: homebridge
-
     - Dockge:
         href: /dockge
         icon: docker-moby
         description: Docker stack manager
         container: dockge
+
+    - OliveTin:
+        href: /olivetin
+        icon: olivetin
+        description: OliveTin
+        container: olivetin  
+
+- Apps:
+
+    - Homebridge:
+        href: /homebridge
+        icon: homebridge
+        description: Homebridge for HomeKit
+        container: homebridge
 
     - Blocky:
         href: /blocky
@@ -34,12 +42,6 @@
         icon: filebrowser
         description: Filebrowser
         container: filebrowser
-
-    - OliveTin:
-        href: /olivetin
-        icon: olivetin
-        description: OliveTin
-        container: olivetin        
 
     - Metube:
         href: /metube
