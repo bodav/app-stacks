@@ -10,3 +10,4 @@ services:
     environment:
       - WUD_WATCHER_LOCAL_CRON=0 */6 * * *
       - WUD_TRIGGER_DOCKER_LOCAL_DRYRUN=true
+      - WUD_REGISTRY_LSCR=
