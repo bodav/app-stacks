@@ -1,5 +1,5 @@
 listenAddressSingleHTTPFrontend: 0.0.0.0:8080
-logLevel: "INFO"
+logLevel: "DEBUG"
 checkForUpdates: true
 
 actions:
