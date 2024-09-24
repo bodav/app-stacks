@@ -19,8 +19,8 @@
 
     - WhatsUpDocker:
         href: /whatsupdocker
-        icon: whatsupdocker
-        description: whatsupdocker
+        icon: whats-up-docker
+        description: Docker image watcher
         container: whatsupdocker  
 
 - Apps:
