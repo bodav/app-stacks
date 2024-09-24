@@ -17,6 +17,12 @@
         description: OliveTin
         container: olivetin  
 
+    - WhatsUpDocker:
+        href: /whatsupdocker
+        icon: whatsupdocker
+        description: whatsupdocker
+        container: whatsupdocker  
+
 - Apps:
 
     - Homebridge:
