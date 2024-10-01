@@ -94,6 +94,7 @@ homepage/config/logs/*
 btstack/*
 olivetin/.env
 olivetin/custom-webui/*
+whatsupdocker/.env
 
 homebridge/.npmrc
 homebridge/.uix-dashboard.json
