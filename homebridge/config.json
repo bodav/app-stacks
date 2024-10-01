@@ -17,11 +17,6 @@
       "platform": "config"
     },
     {
-      "name": "Sonos",
-      "service": "fan",
-      "platform": "ZP"
-    },
-    {
       "platform": "netcasttv",
       "devices": [
         {
