@@ -37,12 +37,6 @@
         description: DNS Server
         container: blocky
 
-    - Gotify:
-        href: /gotify
-        icon: gotify
-        description: Notifications
-        container: gotify
-
     - Filebrowser:
         href: /filebrowser
         icon: filebrowser
