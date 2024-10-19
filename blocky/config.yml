@@ -24,7 +24,8 @@ customDNS:
 hostsFile:
   filePath: /etc/hosts
 prometheus:
-  enable: false
+  enable: true
+  path: /metrics
 queryLog:
   type: console
 log:
