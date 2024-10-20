@@ -17,6 +17,13 @@ actions:
     popupOnStart: execution-dialog-stdout-only
     maxConcurrent: 1
 
+  - title: dockcheck
+    icon: '<iconify-icon icon="file-icons:ansible-alt"></iconify-icon>'
+    shell: ansible-playbook --limit dockerhost /opt/ops/playbooks/dockcheck.yaml
+    timeout: 500
+    popupOnStart: execution-dialog-stdout-only
+    maxConcurrent: 1
+
   - title: ping host
     icon: '<iconify-icon icon="file-icons:ansible-alt"></iconify-icon>'
     shell: ansible-playbook --limit dockerhost /opt/ops/playbooks/ping.yaml
