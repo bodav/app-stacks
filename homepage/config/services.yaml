@@ -11,20 +11,7 @@
         description: Docker stack manager
         container: dockge
 
-    - OliveTin:
-        href: /olivetin
-        icon: olivetin
-        description: OliveTin
-        container: olivetin  
-
-    - WhatsUpDocker:
-        href: /whatsupdocker
-        icon: whats-up-docker
-        description: Docker image watcher
-        container: whatsupdocker  
-
 - Apps:
-
     - Homebridge:
         href: /homebridge
         icon: homebridge
