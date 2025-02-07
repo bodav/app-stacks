@@ -52,6 +52,11 @@
         icon: requestrr
         description: File searcher
 
+    - StravaStats:
+        href: /stravastats
+        icon: https://raw.githubusercontent.com/robiningelbrecht/strava-statistics/refs/heads/master/public/assets/images/logo.svg
+        description: Strava statistics
+
 - Network:
     - Router:
         href: http://192.168.0.1/

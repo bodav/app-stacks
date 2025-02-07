@@ -5,7 +5,5 @@ services:
     restart: unless-stopped
     ports:
       - 5005:8081
-    labels:
-      - wud.watch.digest=true
     volumes:
       - /srv/appdata/media/metube:/downloads

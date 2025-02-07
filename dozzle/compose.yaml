@@ -6,6 +6,4 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
       - 5002:8080
-    labels:
-      - wud.watch.digest=true
     restart: unless-stopped
