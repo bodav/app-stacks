@@ -95,6 +95,7 @@ btstack/*
 olivetin/.env
 olivetin/custom-webui/*
 whatsupdocker/.env
+stravastats/.env
 
 homebridge/.npmrc
 homebridge/.uix-dashboard.json
