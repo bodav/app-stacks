@@ -1,0 +1,9 @@
+services:
+  gotify:
+    image: gotify/server:latest
+    container_name: gotify
+    ports:
+      - 5004:80
+    volumes:
+      - "./data:/app/data"
+    restart: unless-stopped
