@@ -11,6 +11,12 @@
         description: Docker stack manager
         container: dockge
 
+    - Composr:
+        href: /composr
+        icon: docker-moby
+        description: Composr stack manager
+        container: composr
+
 - Apps:
     - Homebridge:
         href: /homebridge
