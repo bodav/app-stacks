@@ -1,0 +1,45 @@
+- name: Download and run dockcheck
+  hosts: all
+  become: true
+  tasks:
+    - name: Install curl
+      ansible.builtin.apt:
+        pkg:
+          - curl
+          - jq
+
+    - name: Create dockcheck directory
+      ansible.builtin.file:
+        path: /opt/docker/dockcheck
+        state: directory
+        mode: u+rwx
+
+    - name: Download dockcheck script
+      ansible.builtin.get_url:
+        url: "https://raw.githubusercontent.com/mag37/dockcheck/main/dockcheck.sh"
+        dest: /opt/docker/dockcheck/dockcheck.sh
+        mode: u+rwx
+
+    - name: Download notify gotify script
+      ansible.builtin.copy:
+        src: /app/notify_gotify.sh
+        dest: /opt/docker/dockcheck/notify.sh
+        mode: u+rwx
+
+    - name: Download regctl
+      ansible.builtin.get_url:
+        url: "https://github.com/regclient/regclient/releases/latest/download/regctl-linux-amd64"
+        dest: /opt/docker/dockcheck/regctl
+        mode: u+rwx
+
+    - name: Print dockcheck version
+      ansible.builtin.command:
+        cmd: "./dockcheck.sh -v"
+        chdir: /opt/docker/dockcheck
+      changed_when: false
+
+    - name: Execute dockcheck
+      ansible.builtin.command:
+        cmd: "./dockcheck.sh -i -a -p -e dockcheck"
+        chdir: /opt/docker/dockcheck
+      changed_when: false

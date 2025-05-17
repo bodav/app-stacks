@@ -1,3 +1,4 @@
 {
-    "makefile.configureOnOpen": false
+    "makefile.configureOnOpen": false,
+    "ansible.python.interpreterPath": "/usr/bin/python"
 }

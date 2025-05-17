@@ -1,12 +1,11 @@
 services:
-  cron:
+  dockcheck:
     build: .
-    container_name: cron
+    container_name: dockcheck
     restart: unless-stopped
     extra_hosts:
       - "host.docker.internal:host-gateway"
     environment:
-      - REPO=https://github.com/bodav/ansible-ops
       - ANSIBLE_PASSWORD=${ANSIBLE_PWD}
       - ANSIBLE_USER=${ANSIBLE_USER}
-      - ANSIBLE_TARGET=dockerhost
+      - GOTIFY_TOKEN=${GOTIFY_TOKEN}
