@@ -3,9 +3,3 @@ dockerhost:
     host.docker.internal:
       ansible_user: '{{ lookup("env", "ANSIBLE_USER") }}'
       ansible_password: '{{ lookup("env", "ANSIBLE_PASSWORD") }}'
-
-prod:
-  hosts:
-    srv.local:
-      ansible_user: '{{ lookup("env", "ANSIBLE_USER") }}'
-      ansible_password: '{{ lookup("env", "ANSIBLE_PASSWORD") }}'
